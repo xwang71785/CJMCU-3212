@@ -87,14 +87,16 @@ Then in Config Tab select your compiled binary from step 2
 Finally in Operation Tab select the right COM port and hit Flash button. Your ESP8266 sketch should be now flashed. 
 
 
-## 4: (Optional) You can upload to Atmega32U4 any sketch you want.
+## A: (Optional) Upload to Atmega32U4 any sketch you want.
 
 For example, if you need Serial debugging of the ESP do step 1 again (For some reason step 3 "erases" the programming in the Atmega32U4). 
 
-Also if you want to use the microSD slot in the board you'll need to upload the right sketch to the Atmega32U4 (the SD is wired to it, use chip select pin 8) 
+## B: (Optional) Using the onboard microSD.
+
+If you want to use the microSD slot in the board you'll need to upload the right sketch to the Atmega32U4 (the SD is wired to it, use chip select pin 8) 
 
 
-## 5: (Suggestion) Upload an OTA-enabled Sketch to ESP
+## C: (Suggestion) Upload an OTA-enabled Sketch to ESP
 
 For those who don't know, OTA (Over The Air) library allows the ESP to be flashed wireless, so if you don't want to be following  the above steps every time you need to flash the ESP (you just flash it once by wired connection) you can follow the next guide: 
 https://github.com/esp8266/Arduino/blob/master/doc/ota_updates/readme.rst . Then you just need the Arduino IDE, select the network port and upload directly. 
