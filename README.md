@@ -99,3 +99,5 @@ Also if you want to use the microSD slot in the board you'll need to upload the 
 For those who don't know, OTA (Over The Air) library allows the ESP to be flashed wireless, so if you don't want to be following  the above steps every time you need to flash the ESP (you just flash it once by wired connection) you can follow the next guide: 
 https://github.com/esp8266/Arduino/blob/master/doc/ota_updates/readme.rst . Then you just need the Arduino IDE, select the network port and upload directly. 
 
+
+Hope this helps, please send any thoughts, improvements and findings about this guide and the board
