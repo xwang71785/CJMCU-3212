@@ -1,7 +1,7 @@
 Guide to flash the CJMCU-3212. In Windows with Arduino IDE and NodeMCU flasher
 
 
-# CJMCU-3212
+# Bad USB CJMCU-3212
 
 ![CJMCU-3212](https://i.imgur.com/z7lX4eF.jpg)
 
