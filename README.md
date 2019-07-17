@@ -1,7 +1,7 @@
 Guide to flash the CJMCU-3212. In Windows with Arduino IDE and NodeMCU flasher
 
 
-# BadUSB CJMCU-3212
+# BadUSB CJMCU-3212 HID神器，集USB， WiFi，MicroSD于一体的Arduino Leonardo开发板，支持Arduino IDE的C语言也支持DuckScript
 
 ![CJMCU-3212](https://i.imgur.com/z7lX4eF.jpg)
 
@@ -12,7 +12,7 @@ This board was originaly intended to inject payload scripts, like a Rubber Ducky
 
 The CJMCU-3212 has:
 - ESP8266 
-- Atmega32U4
+- Atmega32U4 (Arduino Leonardo)
 - Micro SD slot with level shifter (74HC4050D) connected to Atmega32U4
 - Button to put Atmega32U4 in bootloader flash mode (not a reset button)
 
@@ -42,9 +42,9 @@ The first thing to do is put the Atmega32U4 as a serial relay and transmit to ES
 
   *Tools-> Port -> (the corresponding port)*
 
-And upload step1.ino from this repo
+And upload step1.ino from this repo (step1.ino中的代码使得ATmega32u4成为中继，传输数据到ESP8266)
 
-## 2: Compile your sketch for ESP8266
+## 2: Compile your sketch for ESP8266 只编译生成二进制代码不通过Arduino IDE上传！
 
 In Arduino IDE, compile the sketch you want to upload to ESP8266 with the following options selected
 
@@ -69,7 +69,7 @@ Now, the Magic (or the solution that is working for now):
 
 Disconnect the CJMCU.
 
-We need to put the ESP8266 in flash mode (set GPIO0 LOW during boot of the board), to do so bridge the two metal circles on the top right before connect the CJMCU to the USB, you can use a jumper wire for example. Once connected to USB you can remove the bridge as the ESP8266 will stay in flash mode (image)
+We need to put the ESP8266 in flash mode (set GPIO0 LOW during boot of the board), to do so bridge the two metal circles on the top right before connect the CJMCU to the USB, you can use a jumper wire for example. Once connected to USB you can remove the bridge as the ESP8266 will stay in flash mode (image)待验证，网上有说在刷固件的过程中桥接不能断而且要保持按钮按住，但也有可能是刷Bootloader的要求
 
 ![](https://i.imgur.com/5ght4Uu.jpg)
 
