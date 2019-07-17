@@ -1,11 +1,13 @@
 Guide to flash the CJMCU-3212. In Windows with Arduino IDE and NodeMCU flasher
 
 
-# BadUSB CJMCU-3212 HID神器，集USB， WiFi，MicroSD于一体的Arduino Leonardo开发板，支持Arduino IDE的C语言也支持DuckScript
+# BadUSB CJMCU-3212 
+# HID神器，集USB， WiFi，MicroSD于一体的Arduino Leonardo开发板，支持Arduino IDE的C语言也支持DuckScript
 
 ![CJMCU-3212](https://i.imgur.com/z7lX4eF.jpg)
 
 This board was originaly intended to inject payload scripts, like a Rubber Ducky (BadUSB), but if you want to use it for any generic project like me this guide will help you. 
+
 这是一款由长江智动出品的开发板，不知什么原因原厂已经下架，目前淘宝上仍有售，但几乎找不到什么技术资料。
 
 ## Board Features
