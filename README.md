@@ -96,13 +96,17 @@ For example, if you need Serial debugging of the ESP do step 1 again (For some r
 
 ## B: (Optional) Using the onboard microSD.
 
-If you want to use the microSD slot in the board you'll need to upload the right sketch to the Atmega32U4 (the SD is wired to it, use chip select pin 8) 
+If you want to use the microSD slot in the board you'll need to upload the right sketch to the Atmega32U4 (the SD is wired to it, use chip select pin 8) 可以使用Duckduino-MicroSD项目的.ino文件上传到ATmega32U4，使它能够读取SD卡上的DuckScript文件并执行
 
 
 ## C: (Suggestion) Upload an OTA-enabled Sketch to ESP
 
 For those who don't know, OTA (Over The Air) library allows the ESP to be flashed wireless, so if you don't want to be following  the above steps every time you need to flash the ESP (you just flash it once by wired connection) you can follow the next guide: 
 http://esp8266.github.io/Arduino/versions/2.0.0/doc/ota_updates/ota_updates.html . Then you just need the Arduino IDE, select the network port and upload directly. 
+
+## D: (Optional) WiFi_Ducky
+
+参考WiF_Ducky项目
 
 
 Hope this helps, please send any thoughts, improvements and findings about this guide and the board
