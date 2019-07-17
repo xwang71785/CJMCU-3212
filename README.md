@@ -92,7 +92,7 @@ Finally in Operation Tab select the right COM port and hit Flash button. Your ES
 
 ## A: (Optional) Upload to Atmega32U4 any sketch you want.
 
-For example, if you need Serial debugging of the ESP do step 1 again (For some reason step 3 "erases" the programming in the Atmega32U4). 
+For example, if you need Serial debugging of the ESP do step 1 again (For some reason step 3 "erases" the programming in the Atmega32U4). 直接把它当作带USB接口的Arduino Leonardo使用，用C语言编写虚拟键盘和鼠标的代码并通过IDE上传到ATmega32U4
 
 ## B: (Optional) Using the onboard microSD.
 
