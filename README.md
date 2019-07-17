@@ -48,7 +48,7 @@ And upload step1.ino from this repo (step1.ino中的代码使得ATmega32u4成为
 
 In Arduino IDE, compile the sketch you want to upload to ESP8266 with the following options selected
 
-  *Tools-> Board-> Generic ESP8266*
+  *Tools-> Board-> Generic ESP8266(对某些应用或代码要选NodeMCU 1.0)*
 
   *Tools-> Flash Mode -> DIO*
   
