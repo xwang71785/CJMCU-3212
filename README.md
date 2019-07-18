@@ -108,5 +108,8 @@ http://esp8266.github.io/Arduino/versions/2.0.0/doc/ota_updates/ota_updates.html
 
 参考WiF_Ducky项目
 
+## 特别提示：
+
+和其它的NodeMCU不一样，NodeMCU(ESP8266)通常会在板上集成串口通信芯片如CP2012等。这样就可以直接用Arduino IDE选NodeMCU1.0板卡类别，对ESP8266刷code。而CJMCU没有专门的串口芯片，而是通过Step1.ino代码使ATmega32U4成为中继，所以只能用ESPFlasher来耍code
 
 Hope this helps, please send any thoughts, improvements and findings about this guide and the board
